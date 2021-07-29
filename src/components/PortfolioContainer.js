@@ -1,13 +1,13 @@
 import React from "react";
 import Stock from "./Stock";
 
-function PortfolioContainer() {
+function PortfolioContainer({portfolioStock}) {
+
+  
   return (
     <div>
       <h2>My Portfolio</h2>
-      {
-        //render your portfolio stocks here
-      }
+      {<Stock name={portfolioStock.name} price={portfolioStock.price}/>}
     </div>
   );
 }
